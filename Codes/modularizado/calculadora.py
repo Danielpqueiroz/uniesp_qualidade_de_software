@@ -1,8 +1,4 @@
-def fatorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * fatorial(n - 1)
+
     
 def soma(a, b):
     soma = a + b
@@ -17,8 +13,15 @@ def multiplicacao(a, b):
     return multiplicacao
 
 def divisao(a, b):
-    divisao = a / b
-    return divisao
+    if b == 0:
+        raise ValueError("Divisão por zero não é permitida.")
+    return a / b
+
+def fatorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fatorial(n - 1)
 
 def potencia(a, b):
     potencia = a ** b
