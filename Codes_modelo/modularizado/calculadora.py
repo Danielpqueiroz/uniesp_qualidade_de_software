@@ -17,16 +17,13 @@ def divisao(a, b):
         raise ValueError("Divisão por zero não é permitida.")
     return a / b
 
-def potencia(a, b):
-    potencia = a ** b
-    return potencia
-
 def fatorial(n):
     if n == 0:
         return 1
     else:
         return n * fatorial(n - 1)
-    
 
-
+def potencia(a, b):
+    potencia = a ** b
+    return potencia
 
